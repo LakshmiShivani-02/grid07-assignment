@@ -1,0 +1,28 @@
+# ============================================================
+# Grid07 Assignment — Python Dependencies
+# Tested on Python 3.11+ / macOS (Apple Silicon + Intel)
+# ============================================================
+
+# --- Vector DB + Embeddings (Phase 1) ---
+chromadb==0.5.23
+sentence-transformers==3.3.1
+torch==2.5.1          # CPU-only build is fine; chromadb pulls this transitively
+huggingface-hub==0.27.0
+
+# --- LangChain core (Phases 2 & 3) ---
+langchain==0.3.18
+langchain-core==0.3.41
+langchain-community==0.3.17
+langgraph==0.2.73
+
+# --- LLM providers — install the one(s) you use ---
+langchain-groq==0.2.4        # Groq (free tier, recommended for testing)
+langchain-openai==0.3.6      # OpenAI (uncomment if using GPT-4o-mini)
+
+# --- Utilities ---
+python-dotenv==1.0.1          # .env loading
+pydantic==2.10.6              # Structured output validation (v2 API)
+typing-extensions==4.12.2
+
+# --- Optional: pretty console output ---
+rich==13.9.4
